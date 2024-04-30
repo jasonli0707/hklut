@@ -4,7 +4,7 @@ from .units import *
 from utils import bit_plane_slicing, floor_func
 
 class HKNet(nn.Module):
-    def __init__(self, msb='hdb', lsb='hdv', nf=64, upscale=2, act=nn.ReLU):
+    def __init__(self, msb='hdb', lsb='hd', nf=64, upscale=2, act=nn.ReLU):
         super(HKNet, self).__init__()
         self.msb = msb
         self.lsb = lsb
@@ -21,7 +21,7 @@ class HKNet(nn.Module):
             setattr(self, f'msb_{msb}_lut_{ktype}', msb_unit(ktype=ktype, nf=nf, upscale=upscale, act=act))
 
         # lsb
-        lsb_unit = HDUnit if lsb=='hdv' else HDBUnit
+        lsb_unit = HDUnit if lsb=='hd' else HDBUnit
         self.lsb_rot_dict = lsb_unit.rot_dict
         self.lsb_pad_dict = lsb_unit.pad_dict
         self.lsb_avg_factor = lsb_unit.avg_factor
