@@ -3,7 +3,7 @@ This repository serves as the official code release of the IJCAI24 paper: **Hund
 ![](assets/logo.png?v=1&type=image)
 <div align="center">
     <a href="https://arxiv.org/abs/2312.06101"><img src="https://img.shields.io/badge/Arxiv-2312.06101-b31b1b.svg?logo=arXiv" alt=""></a>
-    <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt=""></a>
+    <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg" alt="License: CC BY-NC 4.0"></a>
 </div>
 <br>
 <div align="center">
